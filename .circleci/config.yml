@@ -44,7 +44,7 @@ jobs:
   build:
     docker:
       #- image: nginx:latest
-      - image: apache2
+      - image: httpd
     steps:
       - checkout
       - run: echo "A first hello"
