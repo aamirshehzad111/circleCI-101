@@ -41,7 +41,7 @@
 
 version: 2
 jobs:
-  one:
+  build:
     docker:
       - image: nginx
     steps:
