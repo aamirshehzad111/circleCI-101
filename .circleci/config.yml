@@ -43,12 +43,13 @@ version: 2
 jobs:
   build:
     docker:
-      - image: nginx:latest
+      #- image: nginx:latest
+      - image: 020046395185.dkr.ecr.us-east-1.amazonaws.com/php-apache-image:latest
     steps:
       - checkout
       - run: echo "A first hello"
-      - run: mkdir -p my_workspace
-      - run: echo "Trying out workspaces" > /usr/share/nginx/html/index.html
+      #- run: mkdir -p my_workspace
+      #- run: echo "Trying out workspaces" > /usr/share/nginx/html/index.html
 #       - persist_to_workspace:
 #           # Must be an absolute path, or relative path from working_directory
 #           root: my_workspace
